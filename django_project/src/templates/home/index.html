@@ -1,11 +1,12 @@
 <!-- myapp/templates/myapp/minha_pagina.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/base.css' %}">
     <title>Minha Página</title>
 </head>
 <body>
-    <h1>{{ mensagem }}</h1>
+    <h1 class="msg">{{ mensagem }}</h1>
 </body>
 </html>
